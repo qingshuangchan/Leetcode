@@ -1,0 +1,19 @@
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) 
+    {
+        int[] indices = new int[2];
+            
+        for(int i=0; i<nums.Length; i++)
+        {
+            int sum=nums[i]+nums[i+1];
+            
+            if (sum==target)
+            {              
+                indices[0] = i;
+                indices[1] = i+1;
+                break;
+            }                      
+        }
+        return indices;  
+    }
+}
